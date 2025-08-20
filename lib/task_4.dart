@@ -117,7 +117,7 @@ class _task_4State extends State<task_4> {
                   width: 17,
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      border: Border.all(color: Color(0xFFFF9C00), width: 1),
+                      border: Border.all(color: isChecked? Color(0xFFFF9C00):Colors.black26, width: 1),
                       borderRadius: BorderRadius.circular(5),
                     ),
                     child: isChecked? Icon(Icons.check,color:Color(0xFFFF9C00),size:12,):null,
@@ -131,7 +131,7 @@ class _task_4State extends State<task_4> {
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 11,
-                    color: Color(0xFFFF9C00)),
+                    color: isChecked? Color(0xFFFF9C00):Colors.black26),
               ),
             ],
           ),
